@@ -1,0 +1,67 @@
+[project]
+name = "time-series-in-action-2025"
+version = "0.1.0"
+description = "Репозиторий с материалами интенсива Time Seried In Action"
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "etna==3.0.0",
+    "statsforecast==2.0.2",
+    "datasetsforecast==1.0.0",
+    "prophet==1.1.7",
+]
+
+[dependency-groups]
+dev = [
+    "ruff~=0.11.2",
+    "ipykernel~=6.29.4",
+    "jupyterlab~=4.2.1"
+]
+
+[tool.ruff]
+lint.ignore = [
+  "A003", # builtin-attribute-shadowing
+  "ARG005", # unused-lambda-argument
+  "B023", # function-uses-loop-variable
+  "E501", # line-too-long (may conflict with ruff formatter)
+  "N805", # invalid-first-argument-name-for-method
+  "RET504", # unnecessary-assign
+  "S301", # suspicious-pickle-usage
+  "S311", # suspicious-non-cryptographic-random-usage
+  "S324", # hashlib-insecure-hash-function
+  "S608", # Possible SQL injection vector through string-based query construction
+  "SIM117", # Use a single `with` statement with multiple contexts instead of nested `with` statements
+    "S113", # Probable use of `requests` call without timeout
+    "T201", # `print` found
+    "N806", # Variable `X` in function should be lowercase
+    "N803", # Argument name `X` should be lowercase
+    "ARG002" # Unused method argument: `y`
+]
+line-length = 120
+lint.select = [
+  "A", # flake8-builtins
+  "ARG", # flake8-unused-arguments
+  "B", # flake8-bugbear
+  "C4", # flake8-comprehensions
+  "E", # pycodestyle
+  "ERA", # eradicate
+  "I", # isort
+  "F", # Pyflakes
+  "G", # flake8-logging-format
+  "N", # pep8-naming
+  "PL", # pylint
+  "PT", # flake8-pytest-style
+  "RET", # flake8-return
+  "S", # flake8-bandit
+  "SIM", # flake8-simplify
+  "SLF", # flake8-self
+  "T20", # flake8-print
+  "UP" # pyupgrade
+]
+target-version = "py311"
+
+lint.pylint.max-args = 10
+
+[tool.ruff.format]
+quote-style = "double"
