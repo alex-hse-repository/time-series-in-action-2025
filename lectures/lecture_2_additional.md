@@ -4,7 +4,7 @@
 ## Про сравнение методов кросс валидации на временных рядах
 
 [1] [Vitor Cerqueira, et al Evaluating time series forecasting models. An empirical study on performance estimation methods](https://arxiv.org/pdf/1905.11744)
-## Про предскзательные интервалы
+## Про предсказательные интервалы
 [1] Eyke Hüllermeier, Willem Waegeman, Aleatoric and epistemic uncertainty in machine learning:
 an introduction to concepts and methods  
 [2] [Rob J Hyndman, Prediction intervals too narrow](https://robjhyndman.com/hyndsight/narrow-pi/)  
