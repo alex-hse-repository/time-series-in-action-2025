@@ -10,6 +10,10 @@ dependencies = [
     "statsforecast==2.0.2",
     "datasetsforecast==1.0.0",
     "prophet==1.1.7",
+    "pyod~=2.0.5",
+    "adtk==0.6.2",
+    "torch~=2.7.0",
+    "ipywidgets~=8.1.7"
 ]
 
 [dependency-groups]
