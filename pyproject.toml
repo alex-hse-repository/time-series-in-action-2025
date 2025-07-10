@@ -6,14 +6,19 @@ readme = "README.md"
 requires-python = ">=3.10"
 
 dependencies = [
-    "etna==3.0.0",
+    "etna[torch]==3.0.0",
     "statsforecast==2.0.2",
     "datasetsforecast==1.0.0",
     "prophet==1.1.7",
     "pyod~=2.0.5",
     "adtk==0.6.2",
     "torch~=2.7.0",
-    "ipywidgets~=8.1.7"
+    "ipywidgets~=8.1.7",
+    "wget~=3.2.0",
+    "tsfel~=0.1.9",
+    "pycatch22~=0.4.5",
+    "tsfresh~=0.20.3",
+    "scipy<1.15" # tsfresh
 ]
 
 [dependency-groups]
