@@ -1,7 +1,7 @@
 # День 3. 
 ## Часть 1. Глубокие модели
 
-####  Ноутбуки
+#### Ноутбуки
 
 [colab: DL в ETNA](https://drive.google.com/file/d/1BdO_XFQh8PvpkX360GeeVfc3fYjdL0mU/view?usp=sharing)
 
